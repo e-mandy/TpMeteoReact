@@ -1,0 +1,16 @@
+TP REACT CONTROLE CONTINU
+
+créer un dashboard météo qui affiche des données simulées pour plusieurs villes. L'utilisateur choisit une ville dans un select, l'application affiche la température, l'humidité et une icône de condition. Un bouton "Actualiser" déclenche un rechargement simulé avec un état de chargement.
+Données simulées fournies
+const weatherData: Record<string, WeatherInfo> = {
+  Cotonou:  { temp: 31, humidity: 78, condition: 'sunny' },
+  Paris:    { temp: 14, humidity: 62, condition: 'cloudy' },
+  Tokyo:    { temp: 22, humidity: 55, condition: 'rainy' },
+  Montreal: { temp: -3, humidity: 80, condition: 'snowy' },
+};
+
+interface WeatherInfo {
+  temp: number;
+  humidity: number;
+  condition: 'sunny' | 'cloudy' | 'rainy' | 'snowy';
+}
